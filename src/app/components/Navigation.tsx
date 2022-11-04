@@ -3,7 +3,7 @@
 import styled from '@emotion/styled';
 import { Link, NavLink } from 'react-router-dom';
 import { Box, Flex } from 'theme-ui';
-import { ReactComponent as Snap } from '../images/snap.svg';
+import { ReactComponent as RiotCrew } from '../images/riotcrew.svg';
 
 const linkMixin = `
 color: #1a1446;
@@ -73,7 +73,7 @@ const Navigation = () => {
               alignItems: 'center',
             }}
           >
-            <Snap sx={{ height: 40, width: 'auto', marginRight: 2, fill: 'red' }} />
+            <RiotCrew sx={{ height: 40, width: 'auto', marginRight: 2 }} />
             <span sx={{ verticalAlign: 'super' }}>Team 58 Website</span>
           </Link>
         </Flex>
