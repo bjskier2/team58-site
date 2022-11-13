@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/team58-site/static/css/main.1ef3a49a.css",
-    "main.js": "/team58-site/static/js/main.3416ac9a.js",
+    "main.js": "/team58-site/static/js/main.b67f69c2.js",
     "static/js/787.296b899d.chunk.js": "/team58-site/static/js/787.296b899d.chunk.js",
     "static/media/riotcrew.svg": "/team58-site/static/media/riotcrew.1846729c3c6ac8786cc9bd3dcf53b58b.svg",
     "index.html": "/team58-site/index.html",
     "main.1ef3a49a.css.map": "/team58-site/static/css/main.1ef3a49a.css.map",
-    "main.3416ac9a.js.map": "/team58-site/static/js/main.3416ac9a.js.map",
+    "main.b67f69c2.js.map": "/team58-site/static/js/main.b67f69c2.js.map",
     "787.296b899d.chunk.js.map": "/team58-site/static/js/787.296b899d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ef3a49a.css",
-    "static/js/main.3416ac9a.js"
+    "static/js/main.b67f69c2.js"
   ]
 }
