@@ -63,7 +63,7 @@ const Navigation = () => {
           }}
         >
           <Link
-            to="/"
+            to="/team58-site"
             sx={{
               textDecoration: 'none',
               color: 'lmBlue',
