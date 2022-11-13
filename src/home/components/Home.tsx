@@ -14,7 +14,7 @@ export const Home = () => {
         'a[href]': { cursor: 'pointer' },
       }}
     >
-      
     </Box>
+
   );
 };
