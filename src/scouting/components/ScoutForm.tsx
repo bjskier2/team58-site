@@ -10,7 +10,7 @@ const ScoutForm = () => {
   const data:  { [key: string]: string  } = { 
       "autoHigh": "0",
       "autoLow": "0",
-      "autotaxi": "false",
+      "autoTaxi": "false",
       "teleopHigh": "0",
       "teleopLow": "0",
       "climb": "None"
@@ -37,7 +37,7 @@ const ScoutForm = () => {
   }
 
   const autoTaxi = (flag: boolean) => {
-    updateKey("autotaxi", String(flag));
+    updateKey("autoTaxi", String(flag));
   }
 
   const teleopHigh = (count: string) => { 
