@@ -78,6 +78,7 @@ const Navigation = () => {
           </Link>
         </Flex>
         <Flex>
+          <NavItem to="/robots">Robots</NavItem>
           <NavItem to="/scouting">Scouting</NavItem>
         </Flex>
       </Flex>

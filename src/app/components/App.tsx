@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { Flex } from 'theme-ui';
 import { Home } from '../../home/components/Home';
+import Robots from '../../robots/components/Robots';
 import ScoutForm from '../../scouting/components/ScoutForm';
 import './App.css';
 import Navigation from './Navigation';
@@ -14,6 +15,7 @@ function App() {
       <Flex sx={{ flex: 1, flexDirection: 'column', overflowY: 'hidden' }}>
         <Routes>
           <Route path="/team58-site" element={<Home />} />
+          <Route path="/robots/*" element={<Robots />} />
           <Route path="/scouting/*" element={<ScoutForm />} />
         </Routes>
       </Flex>
