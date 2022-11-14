@@ -8,21 +8,27 @@ interface QRBoxProps {
     children: ReactNode;
     setQrCodeText: (qrCodeText: string) => void;
     qrValue: string;
+    pushToSlack: () => void;
 }
 
 const QRBox = ({
     children,
     setQrCodeText,
     qrValue,
+    pushToSlack
    }: QRBoxProps) => {
    
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
       setQrCodeText(event.target.value);
     };
+
+    const onClick = () => {
+      pushToSlack();
+    }
    
     return (
       <div style={{ backgroundColor: "gray", padding: "20px" }}>
-        <QRCode value={qrValue} size={128} level='H' />
+        <QRCode value={qrValue} size={128} level='H' onClick={onClick} />
         <TextField 
           value={qrValue}
           onChange={handleChange}

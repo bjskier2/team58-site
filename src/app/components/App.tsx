@@ -13,7 +13,7 @@ function App() {
       <Navigation />
       <Flex sx={{ flex: 1, flexDirection: 'column', overflowY: 'hidden' }}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/team58-site" element={<Home />} />
           <Route path="/scouting/*" element={<ScoutForm />} />
         </Routes>
       </Flex>
