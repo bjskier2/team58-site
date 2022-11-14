@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/team58-site/static/css/main.1ef3a49a.css",
-    "main.js": "/team58-site/static/js/main.517dd51c.js",
+    "main.js": "/team58-site/static/js/main.d2fed3ef.js",
     "static/js/787.296b899d.chunk.js": "/team58-site/static/js/787.296b899d.chunk.js",
     "static/media/fuzzyLumkins.jpg": "/team58-site/static/media/fuzzyLumkins.50504680fbc365575784.jpg",
     "static/media/riotcrew.svg": "/team58-site/static/media/riotcrew.1846729c3c6ac8786cc9bd3dcf53b58b.svg",
@@ -10,11 +10,11 @@
     "static/media/guinnevere.jpg": "/team58-site/static/media/guinnevere.08ca9e60f85c7c7fe8b0.jpg",
     "index.html": "/team58-site/index.html",
     "main.1ef3a49a.css.map": "/team58-site/static/css/main.1ef3a49a.css.map",
-    "main.517dd51c.js.map": "/team58-site/static/js/main.517dd51c.js.map",
+    "main.d2fed3ef.js.map": "/team58-site/static/js/main.d2fed3ef.js.map",
     "787.296b899d.chunk.js.map": "/team58-site/static/js/787.296b899d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ef3a49a.css",
-    "static/js/main.517dd51c.js"
+    "static/js/main.d2fed3ef.js"
   ]
 }
