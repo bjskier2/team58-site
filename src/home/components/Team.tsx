@@ -3,12 +3,12 @@ import { useState } from 'react';
 export default function  Team() {
     let [data, setData] = useState("");
     
-    const authKey = "SnDnVbgc07qXx6aIsE7qvhn9lp2yIf1nFOk85A10rd9QXJYCMipZ1PxZWcdoQMY4";
-    const url  = "https://www.thebluealliance.com/api/v3/team/frc58";
+    let apiKey = String(process.env.REACT_APP_TBA_AUTH_KEY);
+    const url  = String(process.env.REACT_APP_TBA_URL) + "/team/frc58";
     var xmlhttp = new XMLHttpRequest();
     var teams = "";
     xmlhttp.open("GET", url, true);
-    xmlhttp.setRequestHeader("X-TBA-Auth-Key", authKey);
+    xmlhttp.setRequestHeader("X-TBA-Auth-Key", apiKey);
     xmlhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
             var response = this.responseText;

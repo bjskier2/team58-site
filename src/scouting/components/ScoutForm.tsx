@@ -57,23 +57,8 @@ const ScoutForm = () => {
       "text": JSON.stringify(qrValue)
     }
 
-    /*
-    var authKey = "SnDnVbgc07qXx6aIsE7qvhn9lp2yIf1nFOk85A10rd9QXJYCMipZ1PxZWcdoQMY4";
-    var xmlhttp = new XMLHttpRequest();
-		var url = "https://www.thebluealliance.com/api/v3/status";
-		xmlhttp.open("GET", url, true);
-		xmlhttp.setRequestHeader("X-TBA-Auth-Key", authKey);
-		xmlhttp.onreadystatechange = function() {
-			if (this.readyState === 4 && this.status === 200) {
-				var response = this.responseText;
-				console.log(JSON.parse(response));
-			}
-		};
-		// Send request
-		xmlhttp.send();
-    */
    var xmlhttp = new XMLHttpRequest();
-   var url = "https://hooks.slack.com/services/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";
+   var url = String(process.env.REACT_APP_SLACK_WEBHOOK);
    xmlhttp.open("POST", url, true);
    xmlhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200) {
@@ -82,18 +67,6 @@ const ScoutForm = () => {
   };
   // Send request
   xmlhttp.send(JSON.stringify(json));
-    
-    /*
-    axios({
-      url: "https://hooks.slack.com/services/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",
-      headers: { 'Content-Type': 'application/json' },
-      method: "POST",
-      data: json
-    })
-      .then((res) => { })
-      .catch((err) => { });
-    */
-
   
   }
    
