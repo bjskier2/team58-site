@@ -2,7 +2,7 @@
 
 import { Box } from 'theme-ui';
 import { usePageTitle } from '../../app/hooks/usePageTitle';
-import Team from './Team';
+import OldTeam from './OldTeam';
 
 export const Home = () => {
   usePageTitle();
@@ -15,7 +15,7 @@ export const Home = () => {
         'a[href]': { cursor: 'pointer' },
       }}
     >
-      <Team />
+      <OldTeam />
     </Box>
     
   );

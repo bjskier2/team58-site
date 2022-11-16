@@ -79,6 +79,7 @@ const Navigation = () => {
         </Flex>
         <Flex>
           <NavItem to="/robots">Robots</NavItem>
+          <NavItem to="/events">Events</NavItem>
           <NavItem to="/scouting">Scouting</NavItem>
         </Flex>
       </Flex>

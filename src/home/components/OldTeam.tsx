@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function  Team() {
+export default function  OldTeam() {
     let [data, setData] = useState("");
     
     let apiKey = String(process.env.REACT_APP_TBA_AUTH_KEY);
@@ -10,14 +10,15 @@ export default function  Team() {
     xmlhttp.open("GET", url, true);
     xmlhttp.setRequestHeader("X-TBA-Auth-Key", apiKey);
     xmlhttp.onreadystatechange = function() {
-        if (this.readyState === 4 && this.status === 200) {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
             var response = this.responseText;
             setData(response)
-            console.log(data)
         }
     };
     // Send request
 	xmlhttp.send();
+
+    console.log(data)
 
     return (
         <div>
@@ -26,4 +27,3 @@ export default function  Team() {
         </div>
     );
 }
-
